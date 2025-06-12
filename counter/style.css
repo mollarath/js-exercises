@@ -1,0 +1,36 @@
+body {
+    background-color: wheat;
+    font-family: system-ui;
+}
+
+.content {
+    /* border: 1px solid; */
+    width: 50%;
+    margin: 0 auto; 
+    text-align: center;    
+}
+
+button {
+    background-color: whitesmoke;
+    border: none;
+    font-size: 16px;
+    box-shadow: 2px 2px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: snow;
+}
+
+button:active {
+    background-color: silver;
+    box-shadow: 0 0;
+}
+
+#increase {
+    color: green;
+}
+
+#decrease {
+    color: red;
+}
