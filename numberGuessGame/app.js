@@ -18,7 +18,6 @@ let reset = () => {
     userInput.value = "";
 
     showGuessed.style.display = "none";
-    // if
     guessedList.innerHTML = "";
 };
 
