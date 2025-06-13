@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Guess Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="content">
-        <h1>Number Guess Game</h1>
-        <h2>Guess your numbers</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga dicta voluptatum eos repellendus laborum odit cupiditate cumque sunt vitae. Sunt eligendi expedita totam fugit vel obcaecati recusandae, consectetur est?</p>
-        <h2>Hello world</h2>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Number Guess Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="content">
+            <h1>Number Guess Game</h1>
+
+            <label for="userInput"
+                >please enter your guess (from 1 to 100):
+            </label>
+            <input type="text" id="userInput" autocomplete="off" />
+            <button id="submitBtn">submit</button>
+            <button id="resetBtn">reset</button>
+            <p id="message"></p>
+
+            <div id="showGuessed">
+                <h3>Numbers that you've already guessed</h3>
+                <ul id="guessedList"></ul>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
 </html>
