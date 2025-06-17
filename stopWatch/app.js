@@ -4,8 +4,7 @@ stopBtn = document.getElementById("stopBtn");
 resetBtn = document.getElementById("resetBtn");
 let startTime;
 let elaspedTime = 0;
-
-let interval = null;
+let interval;
 isRunning = false;
 
 const start = () => {
@@ -18,7 +17,6 @@ const start = () => {
 
 const stop = () => {
     if (isRunning) {
-        console.log(elaspedTime);
         isRunning = false;
         clearInterval(interval);
     }
