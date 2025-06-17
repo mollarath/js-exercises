@@ -1,0 +1,41 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#stopWatch {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+#displayTime {
+    font-size: 2rem;
+}
+
+#btnList {
+    margin: 1rem;
+}
+
+#btnList > button {
+    font-weight: bold;
+}
+
+#btnList > button:hover {
+    cursor: pointer;
+}
+
+#startBtn {
+    color: green;
+}
+
+#stopBtn {
+    color: red;
+}
+
+#resetBtn {
+    color: blue;
+}
