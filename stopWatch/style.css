@@ -39,3 +39,7 @@ body {
 #resetBtn {
     color: blue;
 }
+
+#lapBtn {
+    display: none;
+}

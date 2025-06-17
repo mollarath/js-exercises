@@ -2,6 +2,8 @@ displayTime = document.getElementById("displayTime");
 startBtn = document.getElementById("startBtn");
 stopBtn = document.getElementById("stopBtn");
 resetBtn = document.getElementById("resetBtn");
+lapBtn = document.getElementById("lapBtn");
+
 let startTime;
 let elaspedTime = 0;
 let interval;
@@ -13,6 +15,7 @@ const start = () => {
         isRunning = true;
         interval = setInterval(update, 10);
     }
+    lapBtn.style.display = "inline";
 };
 
 const stop = () => {
@@ -27,6 +30,7 @@ const reset = () => {
     clearInterval(interval);
     elaspedTime = 0;
     displayTime.textContent = `00:00:00:00`;
+    lapBtn.style.display = "none";
 };
 
 const update = () => {
