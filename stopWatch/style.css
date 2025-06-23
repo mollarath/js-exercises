@@ -3,6 +3,10 @@ body {
         Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1 {
+    color: purple;
+}
+
 #stopWatch {
     margin: 0 auto;
     /* border: 1px solid black; */
