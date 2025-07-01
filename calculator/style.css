@@ -56,4 +56,16 @@ body {
     background-color: rgb(206, 206, 206);
     color: black;
     font-size: 1em;
+    transition-duration: 0.1s ;
+}
+
+#btnList > button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#btnList > button:active {
+    background-color: black;
+    color: whitesmoke;
 }
