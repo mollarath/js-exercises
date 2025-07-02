@@ -5,8 +5,9 @@ const btn = document.querySelectorAll("button");
 // equation that used to calculate (limit to 3 length)
 let eqStack = [];
 
-let result = 0;
 const operator = ["+", "-", "×", "÷"];
+let result = 0;
+let tmp = 0;
 let numStr = "";
 
 btn.forEach((ele) => {
@@ -17,7 +18,7 @@ btn.forEach((ele) => {
 
 const calEq = (stack) => {
     result = Number(stack[0]);
-    let tmp = Number(stack[2]);
+    tmp = Number(stack[2]);
     switch (stack[1]) {
         case "+":
             result += tmp;
