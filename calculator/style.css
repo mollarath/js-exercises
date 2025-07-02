@@ -18,10 +18,10 @@ body {
     background-color: black;
 }
 
-#calBox > #displayEq,
-#displayCal {
+#calBox > #displayUpper,
+#displayLower {
     color: white;
-    margin: 0.3em;
+    margin: 0.5em;
 }
 
 #btnList > .number {
