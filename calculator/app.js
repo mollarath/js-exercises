@@ -56,6 +56,8 @@ const insTo = (input) => {
             calEq(eqStack);
             displayUpper.textContent = `${eqStack.join("")} =`;
             displayLower.textContent = `${result}`;
+            numStr = result;
+            eqStack = [];
             break;
         case ".":
             break;
