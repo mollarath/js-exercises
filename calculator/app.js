@@ -17,6 +17,7 @@ btn.forEach((ele) => {
 });
 
 const calEq = (stack) => {
+    // console.log(stack);
     result = Number(stack[0]);
     tmp = Number(stack[2]);
     switch (stack[1]) {
@@ -33,6 +34,7 @@ const calEq = (stack) => {
             result /= tmp;
             break;
     }
+    result = result.toFixed(2);
 };
 
 const reset = () => {
@@ -48,8 +50,12 @@ const insTo = (input) => {
             reset();
             break;
         case "+/-":
+            numStr = 0 - Number(numStr);
+            displayLower.textContent = `${numStr}`;
             break;
         case "%":
+            numStr = Number(numStr) / 100;
+            displayLower.textContent = `${numStr}`;
             break;
         case "=":
             eqStack.push(numStr);
@@ -58,8 +64,6 @@ const insTo = (input) => {
             displayLower.textContent = `${result}`;
             numStr = result;
             eqStack = [];
-            break;
-        case ".":
             break;
         default:
             if (!operator.includes(input)) {
